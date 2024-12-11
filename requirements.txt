@@ -1,0 +1,9 @@
+Flask
+python-dotenv
+Flask-PyMongo
+PyMongo
+pyJWT
+sqlalchemy
+Flask-Cors
+gunicorn
+Flask-Mail
