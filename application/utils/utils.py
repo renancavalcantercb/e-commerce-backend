@@ -5,6 +5,8 @@ from flask_mail import Message, Mail
 from application import app
 from dotenv import load_dotenv
 from os import environ
+import secrets
+
 
 load_dotenv()
 
@@ -38,3 +40,11 @@ def send_confirmation_email(email, token):
     msg.body = f"Your confirmation link is {confirmation_link}"
 
     mail.send(msg)
+
+
+def generate_confirmation_token():
+    return secrets.token_urlsafe(32)
+
+
+def send_confirmation_email(email):
+    print(f"Sending confirmation email to {email}")
