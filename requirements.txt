@@ -1,9 +1,7 @@
-Flask
-python-dotenv
-Flask-PyMongo
-PyMongo
-pyJWT
-sqlalchemy
-Flask-Cors
-gunicorn
-Flask-Mail
+pydantic==1.10.12
+pydantic-settings
+motor==3.1.1
+pymongo==4.9.2
+uvicorn[standard]==0.23.2
+fastapi==0.103.0
+python-dotenv==1.0.0
